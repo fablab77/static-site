@@ -1,1 +1,1 @@
-$(".pinned").pin({containerSelector: ".container", minWidth: 940});
+$(".pinned").pin({containerSelector: ".container"});
