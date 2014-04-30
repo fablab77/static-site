@@ -1,1 +1,1 @@
-$(".fbook").pin()
+$(".pinned").pin({containerSelector: ".container", minWidth: 940});
