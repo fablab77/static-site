@@ -3,6 +3,11 @@ if Object.const_defined?(:Encoding) && !ENV['LANG'] && !ENV['RUBYOPT'].include?(
   Encoding.default_external = 'utf-8'
 end
 activate :relative_assets
+
+activate :autoprefixer do |config|
+  config.browsers = ['last 2 versions', 'Explorer >= 9']
+  config.cascade  = false
+end
 ###
 # Compass
 ###

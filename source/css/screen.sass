@@ -3,54 +3,44 @@
 @import sticky-footer
 
 body
-	background-color: #f9f9f9
 	p
 		font-size: 16px
-	main
-		padding-top: 50px
 
 // typography
-h2
-	margin-top: 8px !important
-	font-weight: bold
-
-// wrapper
-.content
-	background: #fff
-	+border-radius(4px)
-	padding: 10px 20px
-	img
-		margin-bottom: 15px
-		width: 38%
-		&.pull-left
-			margin-right: 15px
-		&.pull-right
-			margin-left: 15px
-	.top-article
-		margin-bottom: 10px
-	.bottom-article
-		-webkit-border-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.09) 10%, rgba(0,0,0,0.09) 90%, rgba(0,0,0,0)) 100% 0
-		border-width: 1px 0
-		margin-bottom: 35px
-		padding-top: 5px
-		padding-bottom: 5px
-	textarea
-		resize: none
+h1, h2, h3, h4, h5, h6
+	margin-top: 0 !important
 
 // header
+.header
+	border-bottom: 1px solid #663399
+	margin-bottom: 30px
+	.navbar
+		margin-bottom: 0
+.index
+	.header
+		position: absolute
+		z-index: 5000
+		width: 100vw
+		border-bottom: none
+		margin-bottom: 0
+		.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus
+			background-color: rgba(102, 51, 153, 0.22)
+		.dropdown-menu
+			background: rgba(255, 255, 255, 0.8)
+		.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+			background-color: rgba(102, 51, 153, 0.22)
+
 .navbar
-	position: absolute
-	z-index: 1
 	background: rgba(255, 255, 255, 0.8)
-	width: 100vw
-	margin-bottom: 10px
 	border: none
-	border-bottom: 3px solid #fff
 	+border-radius(0px)
 	.navbar-right
 		li
 			a
-				padding: 5px
+				padding: 0 10px
+			&:last-child
+				a
+					padding-right: 0
 	img
 		+opacity(.8)
 		height: 30px
@@ -84,8 +74,8 @@ h2
 			margin-left: 0
 // footer
 .footer
-	background: #fff
-	border-top: 3px solid #ddd
+	background: #663399
+	color: #fff
 	padding: 30px 0
 	margin-top: 20px
 	img
@@ -103,4 +93,37 @@ h2
 // fix facebook widget
 ._43qm li:last-child
 	display: none !important
+.phm pluginLikeboxStream
+	height: 800px !important
+
+.flex
+	display: flex
+	width: 1170px
+	margin: 0 auto
+	.article
+		flex: 1 1 320px
+	.aside
+		flex-basis: 355px
+		margin-left: 30px
+
+.article
+	background: #fff
+	+border-radius(4px)
+	img
+		margin-bottom: 15px
+		width: 38%
+		&.pull-left
+			margin-right: 15px
+		&.pull-right
+			margin-left: 15px
+	.top-article
+	.bottom-article
+	textarea
+		resize: none
+
+hr
+	border-top: 1px solid #663399
+
+.fotorama
+	margin-bottom: 30px
 
