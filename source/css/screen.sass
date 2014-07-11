@@ -104,6 +104,13 @@ h1, h2, h3, h4, h5, h6
 		height: 29px
 		background-size: 65px 100%
 		background-image: linear-gradient(40deg, #DEDEDE 50%, #ffffff 50%)
+		background-position: 0px
+		transition: background-position 2s ease
+
+	&:hover
+		&::before
+			background-position: 200px
+			transition: background-position 2s ease
 
 // elements
 .equipment-list
@@ -119,16 +126,6 @@ h1, h2, h3, h4, h5, h6
 	display: none !important
 .phm pluginLikeboxStream
 	height: 800px !important
-
-.flex
-	display: flex
-	width: 1170px
-	margin: 0 auto
-	.article
-		flex: 1 1 320px
-	.aside
-		flex-basis: 355px
-		margin-left: 30px
 
 .article
 	background: #fff
